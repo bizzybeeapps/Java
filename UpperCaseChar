@@ -2,3 +2,35 @@
 Given a string S, check whether all characters are in uppercase or not, First line represents the input string, 
 length of the string S can be 0 to 10000 and The string S contains [A...Z, a...z]. 
   /*
+
+import java.util.*;
+
+public class Case{
+  public static void main(String[] args){
+  //create a Scanner object to read input from the user
+      Scanner scan = new Scanner(System.in);
+      // read the input string
+      String str = scan.nextLine();
+      //assume all characters are uppercase first
+      boolean isUpperCase = true;
+      
+      //loop through each character in the string
+      for(int i = 0; i < str.length(); i++){
+       char ch = str.charAt(i); // get the i character of the string
+        if(!Character.isUpperCase(ch)){ // check if the character is not uppercase
+         isUpperCase = false; //if not set the flag to false
+         break;  // break out of loop
+         }
+       }
+       //if the flag is still true
+       if(isUpperCase){
+         System.out.println("Yes"); //all characters are uppercase, print Yes
+         }else{
+         //otherwise print No
+         System.out.println("No");
+         }
+       }
+     }
+       
+      
+
