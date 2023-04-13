@@ -1,0 +1,4 @@
+/*
+Given a string S, check whether all characters are in uppercase or not, First line represents the input string, 
+length of the string S can be 0 to 10000 and The string S contains [A...Z, a...z]. 
+  /*
